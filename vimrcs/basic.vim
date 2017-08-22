@@ -65,6 +65,12 @@ nmap <leader>w :w!<cr>
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
 
+" Make sure line numbers get displayed.
+set number
+
+" Set "path" to "the directory that you have started vim in".
+" Affects utilities like "find" etc.
+set path=$PWD/**
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
